@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101117">
+  <meta name="description" content="Enter Murim World: an open martial fantasy of rival factions, legendary masters, and a path of your own making. Explore the characters, realms, and places.">
+  <title>Murim World — Your Path Begins</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101117'/%3E%3Cpath d='M13 45 31 12l6 20 14-17-8 35H21Z' fill='none' stroke='%23caa66d' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/img-64.webp" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Murim World, back to top"><span class="brand-mark">武</span><span>MURIM <em>WORLD</em></span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#world">The world</a><a href="#realms">Realms</a><a href="#factions">Factions</a><a href="#characters">Characters</a><a href="#places">Places</a>
+    </nav>
+    <a class="header-cta" href="#begin">Begin your path <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="#world">The world</a><a href="#realms">Realms</a><a href="#factions">Factions</a><a href="#characters">Characters</a><a href="#places">Places</a><a href="#begin">Begin your path</a></nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="line"></span> AN OPEN MARTIAL FANTASY</p>
+        <h1 id="hero-title">Every legend began <em>somewhere.</em></h1>
+        <p class="hero-lead">A world of hidden masters, contested loyalties, and paths that have yet to be walked. Choose who you are. Murim will remember what you do.</p>
+        <div class="hero-actions"><a class="button gold" href="#begin">Begin your path <span>↗</span></a><a class="text-link" href="#world">Enter the world <span>↓</span></a></div>
+        <div class="hero-meta"><span><strong>10</strong> cultivation realms</span><span><strong>13</strong> core factions</span><span><strong>43</strong> named characters</span></div>
+      </div>
+      <div class="hero-art"><img src="assets/img-64.webp" width="1024" height="1536" alt="Wol Yeonhwa, Baek Gyeom, and Seo Mugyeon on the Murim World cover" fetchpriority="high"><div class="hero-art-shadow"></div></div>
+      <div class="hero-side-label" aria-hidden="true">THE WORLD IS WIDE ENOUGH FOR YOUR STORY</div>
+    </section>
+
+    <section class="intro-section section-shell" id="world" aria-labelledby="world-title">
+      <div class="section-head"><div><p class="eyebrow">01 / THE WORLD</p><h2 id="world-title">Power writes history.<br><em>People change it.</em></h2></div><p>Across the Central Plains, martial families, sects, merchants, and wanderers compete for influence. Some seek glory. Some seek peace. None control the entire world.</p></div>
+      <div class="world-layout">
+        <div class="world-image"><img src="assets/img-05.webp" alt="A bustling Central Plains city market filled with travelers and martial artists" loading="lazy"><span>THE CENTRAL PLAINS</span></div>
+        <div class="world-copy"><div class="ornament">✦</div><h3>No path is assigned to you.</h3><p>Study a sword art. Refine a medicine. Bargain for a secret. Join a sect, challenge a rival, or leave the politics behind. Your abilities and choices shape what follows.</p><div class="small-rule"></div><p>The Murim Alliance gathers orthodox powers around a council table. The Heavenly Demon Cult follows its own order. Beyond both stand the independent Star Family and three masters called gods.</p><a class="text-link" href="#characters">Meet the people of Murim <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="gods-section section-shell" aria-labelledby="gods-title"><div class="section-head gods-head"><div><p class="eyebrow">LEGENDS / DIVINE REALM</p><h2 id="gods-title">The Three Gods <em>of Murim</em></h2></div><p>Three independent masters. Three very different kinds of danger. Their titles are legend; their choices are their own.</p></div><div class="gods-grid" id="gods-grid"></div><p class="gods-note">And beyond even the highest recognized realm stands Aniki Star, patriarch of a house no council can command.</p></section>
+
+    <section class="realms-section section-shell" id="realms" aria-labelledby="realms-title"><div class="section-head"><div><p class="eyebrow">02 / THE PATH OF STRENGTH</p><h2 id="realms-title">Ten realms. <em>No easy ascent.</em></h2></div><p>Every realm has early, middle, and late stages. Preparation and technique matter, but the distance between realms is real.</p></div><div class="realm-layout"><div class="realm-list" id="realm-list" role="list" aria-label="Cultivation realms"></div><div class="realm-display" id="realm-display" aria-live="polite"></div></div></section>
+
+    <section class="factions-section section-shell" id="factions" aria-labelledby="factions-title"><div class="section-head"><div><p class="eyebrow">03 / THE POWERS</p><h2 id="factions-title">Every banner <em>has a price.</em></h2></div><p>Choose an allegiance, earn one, or remain beyond their reach. Select a faction to meet its people.</p></div><div class="faction-grid" id="faction-grid"></div><p class="council-note">The Murim Alliance, also called the Orthodox Alliance, is a council of major orthodox families and sects. It does not speak for every member, and the Star Family remains independent.</p></section>
+
+    <section class="atlas-section section-shell" id="characters" aria-labelledby="characters-title"><div class="section-head"><div><p class="eyebrow">04 / THE PEOPLE</p><h2 id="characters-title">An atlas of <em>ambition.</em></h2></div><p>Meet the people who move Murim. Their alliances, rivalries, and secrets unfold through the choices made in play.</p></div><div class="atlas-controls"><label class="search-wrap"><span class="sr-only">Search characters</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg><input id="character-search" type="search" placeholder="Search names, roles, factions…" autocomplete="off"></label><label class="filter-wrap"><span class="sr-only">Filter by faction</span><select id="faction-filter"><option value="all">All factions</option></select></label><span id="result-count" class="result-count"></span></div><div class="character-grid" id="character-grid"></div><p class="empty-state" id="character-empty" hidden>No characters match that search. Try another name or faction.</p></section>
+
+    <section class="places-section section-shell" id="places" aria-labelledby="places-title"><div class="section-head"><div><p class="eyebrow">05 / THE PLACES</p><h2 id="places-title">A world beyond <em>the page.</em></h2></div><p>From mistbound estates to crowded arenas, every place holds a different kind of story.</p></div><div class="places-grid" id="places-grid"></div></section>
+
+    <section class="moments-section section-shell" aria-labelledby="moments-title"><div class="section-head"><div><p class="eyebrow">ARTBOOK / MOMENTS</p><h2 id="moments-title">A closer <em>look.</em></h2></div><p>Expressions, encounters, and alternate glimpses from the Murim World collection.</p></div><div class="moments-grid" id="moments-grid"></div></section>
+
+    <section class="begin-section" id="begin" aria-labelledby="begin-title"><div class="begin-inner"><div><p class="eyebrow">YOUR STORY / YOUR RULES</p><h2 id="begin-title">Who will you <em>become?</em></h2><p>Give your character a name, a realm, a history, or just a single goal. Leave the rest to be discovered as you travel.</p><div class="begin-actions"><button class="button gold" id="copy-template">Copy character template <span>↗</span></button><span id="copy-feedback" role="status" aria-live="polite"></span></div></div><div class="character-sheet" aria-label="Character template preview"><span class="sheet-top">CHARACTER NOTES</span><div><span>01</span>Name & appearance</div><div><span>02</span>Background & abilities</div><div><span>03</span>Realm & affiliation</div><div><span>04</span>Goals & starting place</div><small>Your path begins with what you choose to reveal.</small></div></div></section>
+
+    <section class="sound-section section-shell" aria-labelledby="sound-title"><div class="sound-cover"><img src="assets/img-64.webp" alt="Murim World cover art" loading="lazy"></div><div class="sound-info"><p class="eyebrow">THE SOUND OF MURIM</p><h2 id="sound-title">Beneath the <em>Murim Sky</em></h2><p>The original instrumental theme for wandering roads, gathering storms, and the first step of a new story.</p><div class="audio-control"><button id="audio-toggle" aria-label="Play Beneath the Murim Sky"><span id="audio-icon">▶</span></button><div class="audio-lines"><strong>Beneath the Murim Sky</strong><span>Original story theme · instrumental</span><div class="progress-track" id="progress-track" role="slider" tabindex="0" aria-label="Seek music" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-fill" id="progress-fill"></div></div></div><span class="audio-time" id="audio-time">0:00</span></div><audio id="soundtrack" src="assets/beneath-the-murim-sky.mp3" preload="none" loop></audio></div></section>
+  </main>
+  <footer class="footer"><div><a class="brand" href="#top"><span class="brand-mark">武</span><span>MURIM <em>WORLD</em></span></a><p>A world to enter. A path to make your own.</p></div><div class="footer-right"><a href="https://ko-fi.com/elmirasiska" target="_blank" rel="noopener noreferrer">Support on Ko-fi ↗</a><a href="#top">Back to top ↑</a></div></footer>
+  <dialog id="image-dialog" class="image-dialog"><button class="dialog-close" aria-label="Close image">×</button><img id="dialog-image" alt=""><div class="dialog-caption"><strong id="dialog-title"></strong><span id="dialog-subtitle"></span></div></dialog>
+</body>
+</html>
